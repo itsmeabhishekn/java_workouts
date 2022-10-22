@@ -7,6 +7,6 @@ public class TempConv {
         System.out.println("Enter the Temperature in Fahrenheit ");
         Temp_far = reader.nextInt();
         Temp_cel = ((Temp_far-32)*5)/9;
-        System.out.println(Temp_far+"F Temperature is "+Temp_cel+"C" );
+        System.out.println(Temp_far+"F Temperature is "+Temp_cel+"C " );
     }
 }

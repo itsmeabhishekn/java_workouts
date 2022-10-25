@@ -26,7 +26,7 @@ public class Palindrome {
             System.out.println("The word "+word+" is palindrome");
         }
         else{
-            System.out.println("The word "+word+" is not palindrome ");
+            System.out.println("The word "+word+"  is not palindrome ");
         }
 
     }

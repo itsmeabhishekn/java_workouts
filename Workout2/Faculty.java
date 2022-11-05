@@ -50,7 +50,7 @@ class partTimeFaculty extends Faculty{
         System.out.println("Enter the faculty ID");
         facultyId = reader.next();
 
-        System.out.println("Enter number of hours worked by faculty ");
+        System.out.println("Enter number of hours worked by faculty. ");
         hour = reader.nextInt();
 
         System.out.println("Enter rate per hour for the employee. ");

@@ -45,9 +45,10 @@ class TwoBHK extends OneBHK
     }
 
     //parameterized constructor
-    TwoBHK(double r2A)
+    TwoBHK(double r2A,double rmA,double hlA,int price)
     {
-        super(100,150,20);
+        super(rmA,hlA,price);
+
         room2Area =r2A;
     }
     public void showTwoBHK()
@@ -61,8 +62,21 @@ class TwoBHK extends OneBHK
 
 class Driver1 {
     public static void main(String[] args) {
-        TwoBHK t1= new TwoBHK(1000);
+        System.out.println("-------------------------------");
+
+        TwoBHK t1= new TwoBHK(1000,1200,1110,110);
         t1.showTwoBHK();
 
+        System.out.println("-------------------------------");
+
+        TwoBHK t2= new TwoBHK(1400,1900,2110,130);
+        t1.showTwoBHK();
+
+        System.out.println("-------------------------------");
+
+        TwoBHK t3= new TwoBHK(2000,2200,1010,210);
+        t1.showTwoBHK();
+
+        System.out.println("-------------------------------");
     }
 }

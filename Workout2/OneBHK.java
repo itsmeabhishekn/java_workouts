@@ -53,10 +53,10 @@ class TwoBHK extends OneBHK
     }
     public void showTwoBHK()
     {
-        System.out.println("Room area : "+this.roomArea);
-        System.out.println("Hall area : "+this.hallArea);
-        System.out.println("Price     : "+this.price);
-        System.out.println("Room 2 Are:"+this.room2Area);
+        System.out.println("Room area   : "+this.roomArea);
+        System.out.println("Hall area   : "+this.hallArea);
+        System.out.println("Price       : "+this.price);
+        System.out.println("Room 2 Area : " +this.room2Area);
     }
 }
 
@@ -70,13 +70,19 @@ class Driver1 {
         System.out.println("-------------------------------");
 
         TwoBHK t2= new TwoBHK(1400,1900,2110,130);
-        t1.showTwoBHK();
+        t2.showTwoBHK();
 
         System.out.println("-------------------------------");
 
         TwoBHK t3= new TwoBHK(2000,2200,1010,210);
-        t1.showTwoBHK();
+        t3.showTwoBHK();
 
         System.out.println("-------------------------------");
+
+        double totalPrice = ((t1.hallArea+t1.roomArea+t1.room2Area)* t1.price) +
+                ((t2.hallArea+t2.roomArea+t2.room2Area)* t2.price)+
+                ((t3.hallArea+t3.roomArea+t3.room2Area)* t3.price);
+
+        System.out.println("Total Price : "+totalPrice);
     }
 }

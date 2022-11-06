@@ -20,6 +20,7 @@ public class OneBHK {
         System.out.println("This is the default constructor for OneBHK");
     }
 
+    //parameterized constructor
     public OneBHK(double rmA , double hlA , double prc)
     {
         roomArea = rmA;
@@ -42,8 +43,11 @@ class TwoBHK extends OneBHK
     public TwoBHK(){
         System.out.println("This is the default constructor for TwoBHK");
     }
+
+    //parameterized constructor
     TwoBHK(double r2A)
     {
+        super();
         room2Area =r2A;
     }
     public void showTwoBHK()
@@ -57,7 +61,8 @@ class TwoBHK extends OneBHK
 
 class Driver1 {
     public static void main(String[] args) {
-        //TwoBHK t1 = new TwoBHK(100,200,140);
+        TwoBHK t1= new TwoBHK(1000);
+        t1.showTwoBHK();
 
     }
 }

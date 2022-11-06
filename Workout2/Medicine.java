@@ -41,6 +41,7 @@ class  Tablet extends Medicine{
     @Override
     void displayLabel()
     {
+        super.displayLabel();
         System.out.println("Store in a cool dry place ");
     }
 
@@ -51,6 +52,7 @@ class Syrup extends Medicine
     @Override
     void displayLabel()
     {
+        super.displayLabel();
         System.out.println("Only take 1 table spoon");
     }
 
@@ -62,6 +64,7 @@ class Ointment extends Medicine
     @Override
     void displayLabel()
     {
+        super.displayLabel();
         System.out.println("For external use only ");
     }
 }
@@ -72,7 +75,6 @@ class TestMedicine {
         Random r1 = new Random();
         int randomNum = r1.nextInt(1,4);
 
-        System.out.println(randomNum);
 
 
 
@@ -80,21 +82,21 @@ class TestMedicine {
         {
             case 1:
                 Tablet Tab1= new Tablet();
-                Tablet Tab2 = new Tablet();
-                Tablet Tab3 = new Tablet();
-                Tab3.displayLabel();
+                //Tablet Tab2 = new Tablet();
+                //Tablet Tab3 = new Tablet();
+                Tab1.displayLabel();
                 break;
             case 2:
                 Syrup Syr1= new Syrup();
-                Syrup Syr2= new Syrup();
-                Syrup Syr3= new Syrup();
-                Syr3.displayLabel();
+                //Syrup Syr2= new Syrup();
+                //Syrup Syr3= new Syrup();
+                Syr1.displayLabel();
                 break;
             case 3:
                 Ointment Oin1 = new Ointment();
-                Ointment Oin2 = new Ointment();
-                Ointment Oin3 = new Ointment();
-                Oin3.displayLabel();
+                //Ointment Oin2 = new Ointment();
+                //Ointment Oin3 = new Ointment();
+                Oin1.displayLabel();
                 break;
         }
     }

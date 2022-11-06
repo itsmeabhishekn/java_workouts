@@ -47,7 +47,7 @@ class TwoBHK extends OneBHK
     //parameterized constructor
     TwoBHK(double r2A)
     {
-        super();
+        super(100,150,20);
         room2Area =r2A;
     }
     public void showTwoBHK()
